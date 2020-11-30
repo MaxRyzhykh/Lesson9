@@ -18,7 +18,7 @@ public class Main {
         Address address3 = new Address("Gomel","Brezhneva",21);
         Person person3 = new Person("Iosif","Cuper", address3);
 
-        System.out.println(person1 + "\n" + person2 + "\n" + person3);
+        System.out.println(person1 + "\n" + person2 + "\n" + person3 + "\n");
 
 
         ArrayList<Person> personsList = new ArrayList<>();

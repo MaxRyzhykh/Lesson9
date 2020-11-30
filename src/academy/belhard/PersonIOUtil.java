@@ -29,9 +29,15 @@ public class PersonIOUtil {
     public static void readPersons(String fileName) {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String s;
+            ArrayList<Person> newPersonList = new ArrayList<>();
+
             while ((s = reader.readLine()) != null) {
                 Person person = PersonIOUtil.formatObject(s);
 
+                newPersonList.add(person);
+            }
+
+            for (Person person : newPersonList) {
                 System.out.println(person);
             }
         } catch (FileNotFoundException e) {
